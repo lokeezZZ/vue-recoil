@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "lib": ["ES2018"],
+    "baseUrl": ".",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "removeComments": true,
+    "module": "commonjs",
+    "esModuleInterop": true,
+    "typeRoots": ["typings"],
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "include": ["src", "tests"],
+  "exclude": ["node_modules", "rollup.config.js"]
+}
