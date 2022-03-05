@@ -28,3 +28,6 @@ export function useRecoilState<T>(atom: Atom<T>): [T, (value: T) => void] {
     // console.log('atom', atom);
   }];
 }
+
+export { atom } from "./Atom";
+export { selector} from "./Slector"

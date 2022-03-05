@@ -76,11 +76,7 @@ typings/
 .cache
 
 # build outputs
-cjs
-es
-native
-umd
-/index.d.ts
+dist
 nightly-build-files
 
 # Mac

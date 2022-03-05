@@ -1,13 +1,16 @@
 {
   "compilerOptions": {
-    "lib": ["ES2018"],
+    "lib": ["DOM", "ESNext"],
+    "outDir": "./dist",
     "baseUrl": ".",
     "sourceMap": true,
     "noImplicitAny": true,
     "removeComments": true,
-    "module": "commonjs",
+    "declaration": true,
+    "module": "esnext",
     "esModuleInterop": true,
     "typeRoots": ["typings"],
+    "skipLibCheck": true,
     "paths": {
       "@/*": ["src/*"]
     }
