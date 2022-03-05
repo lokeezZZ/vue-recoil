@@ -24,12 +24,12 @@ export const atomState = atom({
 ```js
 // `.vue`
 import {defineComponent} from 'vue';
-import {useRcoilState} from 'vue-recoil';
+import {useRecoilState} from 'vue-recoil';
 import {atomState} from './store/atom';
 
 export default defineComponent({
   setup() {
-    let [count, setCount] = useRcoilState(atomState);
+    let [count, setCount] = useRecoilState(atomState);
     const increment = () => {
       setCount(count + 1);
     };

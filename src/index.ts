@@ -21,7 +21,7 @@ export function useRecoilValue<T>(state: Stateful<T>): RefValue<T> {
   return snapshot as RefValue<T>;
 }
 
-export function useRcoilState<T>(atom: Atom<T>): [T, (value: T) => void] {
+export function useRecoilState<T>(atom: Atom<T>): [T, (value: T) => void] {
   const value = useRecoilValue<T>(atom);
   return [value as T, (newValue) => {
     atom.setState(newValue);
